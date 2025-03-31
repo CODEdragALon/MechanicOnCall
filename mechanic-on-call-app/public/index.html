@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Machine On Call</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --secondary-blue: #003d82;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 61, 130, 0.9), rgba(0, 86, 179, 0.8)), url('./images/Mechanic On Call 0.jpeg');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .nav-custom {
+            background-color: var(--primary-blue);
+            padding: 1rem 0;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-blue);
+            border: none;
+            padding: 12px 24px;
+            color: white;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-blue);
+        }
+
+        .service-box {
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .nav-logo {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .w3-bar {
+            display: flex;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="w3-top nav-custom">
+    <div class="w3-bar w3-padding">
+        <img src="./images/Mechanic On Call Logo.jpg" alt="Mechanic On Call Logo" class="nav-logo">
+        <a href="#home" class="w3-bar-item w3-button"><strong>Mechanic On Call</strong></a>
+        <div class="w3-right w3-hide-small">
+            <a href="#services" class="w3-bar-item w3-button">Services</a>
+            <a href="#calendar" class="w3-bar-item w3-button">Request Service</a>
+            <a href="https://www.instagram.com/mechaniconcall_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button">Contact</a>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<header class="hero-section" id="home">
+    <div class="w3-container w3-left-align">
+        <h1 class="w3-jumbo">Professional Mechanical Repairs</h1>
+        <p class="w3-large">On Demand Services Available</p>
+        <button class="btn-primary w3-margin-top" onclick="document.getElementById('calendar').scrollIntoView()">
+            Request Service Now
+        </button>
+    </div>
+</header>
+
+<!-- Sumarry Section -->
+<section id="summary" class="w3-container w3-padding-32">
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third">
+            <div class="service-box">
+                <i class="fas fa-tools service-icon"></i>
+                <h3>Direct Repairs</h3>
+                <p>Service repairs come to you</p>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="service-box">
+                <i class="fas fa-calendar-check service-icon"></i>
+                <h3>Flexible Scheduling</h3>
+                <p>7 days a week, schedule to your convenience</p>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="service-box">
+                <i class="fas fa-star service-icon"></i>
+                <h3>Expert Service</h3>
+                <p>Certified professional at your service</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="w3-container w3-padding-32">
+    <h2 class="w3-center">Our Services</h2>
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third">
+            <div class="service-box">
+                <i class="fas fa-sun service-icon"></i>
+                <h3>Check Engine Light Diagnostic</h3>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="service-box">
+                <i class="fas fa-car service-icon"></i>
+                <h3>Vehicle Inspection</h3>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="service-box">
+                <i class="fas fa-oil-can service-icon"></i>
+                <h3>Oil Change</h3>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-half">
+            <div class="service-box">
+                <i class="fas fa-traffic-light service-icon"></i>
+                <h3>Brake Inspection</h3>
+            </div>
+        </div>
+        <div class="w3-center">
+            <div class="service-box">
+                <i class="fas fa-circle-stop service-icon"></i>
+                <h3>Tire Change On Rims</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Calendar Section -->
+<section id="calendar" class="w3-container w3-padding-32">
+    <div class="w3-content">
+        <h2 class="w3-center">Schedule Your Service</h2>
+        <p class="w3-center">Choose a convenient time for your service appointment</p>
+        <p class="w3-center">Please provide your vehicle information, desired service location, and contact</p>
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" 
+             data-url="https://calendly.com/abigail-louie-torontomu" 
+             style="min-width:320px;height:700px;">
+        </div>
+        <script type="text/javascript" 
+                src="https://assets.calendly.com/assets/external/widget.js" 
+                async>
+        </script>
+        <!-- Calendly inline widget end -->
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16 w3-center" style="background-color: var(--primary-blue); color: white;">
+    <div class="w3-xlarge w3-padding-16">
+        <a href="https://www.instagram.com/mechaniconcall_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram w3-hover-opacity"></i>
+        </a>
+    </div>
+    <p>© 2025 Mechanic On Call Service Request. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
